@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MelodyMines</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="loginBtn" class="login-btn">Login with Spotify</button>
+
+    <div class="player-section" id="playerSection" style="display: none;">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search tracks..." />
+      </div>
+
+      <div class="track-list" id="trackList"></div>
+
+      <div class="player-controls">
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prevBtn" class="control-btn"><i class="fas fa-step-backward"></i></button>
+          <button id="playBtn" class="control-btn"><i class="fas fa-play"></i></button>
+          <button id="nextBtn" class="control-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
